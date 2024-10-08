@@ -18,7 +18,7 @@ torchvision == `0.11.2`,
 python == `3.8.13`, 
 CUDA==`11.4`
 
-Download [ViT-B/32.pt]("https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt") into the `clip` folder
+Download [ViT-B/32.pt](https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt) into the `clip` folder
 ## Datasets
 All datasets can be downloaded from
 [GoogleDrive](https://drive.google.com/file/d/1JAX8OaIJQ7ZEaIg61axJoHCw1GZkim9Q/view?usp=sharing) or [BaiduNetdisk](https://pan.baidu.com/s/1PC0Pegpg7tfGyCVjbHbu6w?pwd=mrid). (~4.3GB). Please contact the author of "Traffic Control Gesture Recognition for Autonomous Vehicles" (IROS 2020, oral) for the TCG dataset. Link: [TCG](https://github.com/againerju/tcg_recognition)
