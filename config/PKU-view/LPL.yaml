@@ -1,0 +1,54 @@
+# task settings
+clip: TextEncoder.Clip.Model
+model: libs.models.DPE.Model
+part_list: [[2, 3, 20],  [4, 5, 6, 7, 8, 9, 10, 11, 21, 22, 23, 24], [0, 1, 20, 12, 16], [12, 13, 14, 15, 16, 17, 18, 19], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]]
+part_text_idx: [0, 1, 2, 3, 4]
+
+# dataset
+dataset: PKU-view
+n_classes: 52
+csv_dir: ./dataset/csv
+dataset_dir: Datasets/
+batch_size: 4
+n_node: 25
+class_weight: False
+ds_rate: 1
+learning_rate: 0.0005
+in_channel: 12
+max_epoch: 300
+start_eval_epoch: 0
+
+# common settings
+scratch_dir: release
+boundary_th: 0.5
+ce: true
+ce_weight: 1.0
+focal: false
+focal_weight: 1.0
+gstmse: true
+gstmse_index: feature
+gstmse_weight: 1.0
+lambda_b: 0.1
+optimizer: Adam
+momentum: 0.9
+dampening: 0.0
+weight_decay: 0.0001
+nesterov: true
+tmse: false
+tmse_weight: 0.15
+tolerance: 5
+n_features: 64
+n_layers: 10
+n_stages: 4
+n_stages_asb: 2
+n_stages_brb: 3
+SFI_layer: [1, 2 ,3, 4, 5, 6, 7, 8, 9]
+num_workers: 4
+iou_thresholds:
+- 0.1
+- 0.25
+- 0.5
+split: 1
+device: 0
+param_search: True
+refinement_method: refinement_with_boundary
